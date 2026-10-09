@@ -1,0 +1,36 @@
+[
+  {
+    "test": "边界 - 缺 industryEn",
+    "status": 400,
+    "body": {
+      "error": "请提供 industryEn 字段"
+    }
+  },
+  {
+    "test": "边界 - 未知行业",
+    "status": 200,
+    "style": "minimalism-and-swiss-style",
+    "fallback": false
+  },
+  {
+    "test": "边界 - 极短生成(非流式)",
+    "status": 200,
+    "contentLen": 978,
+    "content": "这是您需要的极简HTML页面。它只包含一个“Hello”文本，所有样式都已内联，代码非常简洁。\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" conte"
+  },
+  {
+    "test": "边界 - rich丰富度完整生成",
+    "status": 200,
+    "totalChars": 28749,
+    "hasHtmlEnd": true,
+    "hasFooter": true,
+    "sectionCount": [
+      "class=\"section",
+      "class=\"section",
+      "class=\"section",
+      "class=\"section",
+      "class=\"section",
+      "class=\"section"
+    ]
+  }
+]

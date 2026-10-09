@@ -1,0 +1,19 @@
+{
+  "test": "正常流程 - 咖啡店官网生成",
+  "timestamp": "2026-10-08T15:00:45.895Z",
+  "design": {
+    "status": 200,
+    "style": "vibrant-and-block-based",
+    "color": "#92400E"
+  },
+  "generation": {
+    "status": 200,
+    "totalChars": 26645,
+    "extractedChars": 26645,
+    "hasDoctype": true,
+    "hasBody": true,
+    "hasHtmlEnd": true,
+    "hasChinese": true
+  },
+  "htmlPreview": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>蓝湾咖啡 | 海景现磨精品咖啡 · 拿铁手冲烘焙</title>\n<meta name=\"description\" content=\"蓝湾咖啡——坐拥一线海景的精品咖啡馆。现磨咖啡、手冲单品与新鲜烘焙，为咖啡爱好者打造温暖cozy的临海空间。立即预约到店。\">\n<meta name=\"keywords\" content=\"蓝湾咖啡,海景咖啡,拿铁,手冲咖啡,咖啡烘焙,精品咖啡馆,预约到店\">\n<meta name=\"author\" content=\"蓝湾咖啡\">\n<meta name=\"theme-color\" content=\"#92400E\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:title\" content="
+}

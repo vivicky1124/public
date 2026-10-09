@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蓝湾咖啡 | 海景现磨精品咖啡 · 拿铁手冲烘焙</title>
+<meta name="description" content="蓝湾咖啡——坐拥一线海景的精品咖啡馆。现磨咖啡、手冲单品与新鲜烘焙，为咖啡爱好者打造温暖cozy的临海空间。立即预约到店。">
+<meta name="keywords" content="蓝湾咖啡,海景咖啡,拿铁,手冲咖啡,咖啡烘焙,精品咖啡馆,预约到店">
+<meta name="author" content="蓝湾咖啡">
+<meta name="theme-color" content="#92400E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="蓝湾咖啡 | 海景现磨精品咖啡">
+<meta property="og:description" content="坐拥一线海景的精品咖啡馆，现磨手冲、新鲜烘焙，温暖cozy的临海空间。">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="蓝湾咖啡 | 海景现磨精品咖啡">
+<meta name="twitter:description" content="坐拥一线海景的精品咖啡馆，现磨手冲、新鲜烘焙。立即预约到店。">
+<link rel="canonical" href="https://lanwan.cafe/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Russo+One&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#92400E',
+        'on-primary': '#FFFFFF',
+        secondary: '#B45309',
+        'on-secondary': '#FFFFFF',
+        accent: '#92400E',
+        'on-accent': '#FFFFFF',
+        background: '#FEF3C7',
+        foreground: '#78350F',
+        card: '#FFFFFF',
+        'card-foreground': '#78350F',
+        muted: '#EDEEF0',
+        'muted-foreground': '#475569',
+        border: '#FDE68A',
+        destructive: '#DC2626',
+        'on-destructive': '#FFFFFF',
+        ring: '#92400E'
+      },
+      fontFamily: {
+        display: ['"Russo One"', 'sans-serif'],
+        body: ['"Chakra Petch"', 'sans-serif']
+      },
+      maxWidth: {
+        content: '1120px'
+      },
+      keyframes: {
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' }
+        },
+        waveMove: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' }
+        }
+      },
+      animation: {
+        fadeUp: 'fadeUp 600ms ease-out both',
+        waveMove: 'waveMove 18s linear infinite'
+      }
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "蓝湾咖啡",
+  "description": "坐拥一线海景的精品咖啡馆，现磨手冲与新鲜烘焙。",
+  "servesCuisine": ["咖啡", "拿铁", "手冲"],
+  "keywords": "coffee,ocean,海景咖啡,拿铁,手冲,烘焙",
+  "priceRange": "$$",
+  "address": { "@type": "PostalAddress", "addressCountry": "CN" }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Chakra Petch', sans-serif; background: #FEF3C7; color: #78350F; }
+  .font-display { font-family: 'Russo One', sans-serif; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 600ms ease-out, transform 600ms ease-out; }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+  .dot-grid {
+    background-image: radial-gradient(#92400E 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .animate-waveMove { animation: none !important; }
+  }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-background/90 backdrop-blur border-b border-border">
+  <div class="max-w-content mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2.5">
+      <span class="w-9 h-9 rounded-xl bg-primary grid place-items-center text-on-primary" aria-hidden="true">
+        <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 8h11v5a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8Z"/>
+          <path d="M15 9h2.5a2.5 2.5 0 0 1 0 5H15"/>
+          <path d="M6 3.5c0 1 .8 1.5.8 2.5"/>
+        </svg>
+      </span>
+      <span class="font-display text-lg tracking-wide text-foreground">蓝湾咖啡</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-foreground" aria-label="主导航">
+      <a href="#menu" class="hover:text-primary transition-colors duration-200">菜单</a>
+      <a href="#view" class="hover:text-primary transition-colors duration-200">海景空间</a>
+      <a href="#craft" class="hover:text-primary transition-colors duration-200">现磨烘焙</a>
+      <a href="#visit" class="hover:text-primary transition-colors duration-200">到店</a>
+    </nav>
+    <a href="#visit" class="rounded-xl bg-primary text-on-primary px-4 sm:px-5 py-2.5 text-sm font-semibold hover:bg-secondary transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
+      预约到店
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <!-- CSS gradient ocean scene (no external images) -->
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute inset-0" style="background: linear-gradient(180deg,#FEF3C7 0%,#FDE68A 38%,#B45309 40%,#92400E 100%);"></div>
+      <svg class="absolute bottom-0 left-0 w-[200%] h-40 animate-waveMove opacity-60" viewBox="0 0 1200 160" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 80 C150 30 300 130 450 80 C600 30 750 130 900 80 C1050 30 1200 130 1350 80 L1350 160 L0 160 Z" fill="#78350F" fill-opacity="0.35"/>
+        <path d="M0 110 C150 70 300 150 450 110 C600 70 750 150 900 110 C1050 70 1200 150 1350 110 L1350 160 L0 160 Z" fill="#92400E" fill-opacity="0.55"/>
+      </svg>
+      <div class="absolute top-10 right-6 w-40 h-40 sm:w-56 sm:h-56 rounded-full" style="background: radial-gradient(circle at 35% 35%, #FEF3C7, #FDE68A 55%, transparent 72%);"></div>
+    </div>
+
+    <div class="max-w-content mx-auto px-5 sm:px-8 pt-20 pb-28 sm:pt-28 sm:pb-36">
+      <div class="max-w-2xl">
+        <p class="inline-flex items-center gap-2 rounded-full bg-card/80 border border-border px-4 py-1.5 text-xs sm:text-sm font-semibold text-foreground mb-6 reveal">
+          <svg viewBox="0 0 24 24" class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3.2"/></svg>
+          海景 · 现磨 · 慢生活
+        </p>
+        <h1 class="font-display text-4xl sm:text-6xl leading-[1.08] text-foreground reveal" style="transition-delay:80ms">
+          海岸线边的<br><span class="text-primary">一杯现磨</span>
+        </h1>
+        <p class="mt-6 text-base sm:text-lg text-foreground/85 leading-relaxed max-w-xl reveal" style="transition-delay:160ms">
+          蓝湾咖啡把海浪声磨进豆子里。拿铁的绵密、手冲的清亮、刚出炉的烘焙香气——为咖啡爱好者准备的一整面落地窗海景。
+        </p>
+        <div class="mt-9 flex flex-wrap items-center gap-4 reveal" style="transition-delay:240ms">
+          <a href="#visit" class="rounded-xl bg-primary text-on-primary px-7 py-3.5 font-semibold shadow-sm hover:bg-secondary hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
+            预约到店
+          </a>
+          <a href="#menu" class="rounded-xl bg-card text-card-foreground border border-border px-7 py-3.5 font-semibold hover:bg-muted transition-colors duration-200">
+            看看菜单
+          </a>
+        </div>
+        <dl class="mt-12 grid grid-cols-3 gap-4 max-w-md reveal" style="transition-delay:320ms">
+          <div class="rounded-2xl bg-card/85 border border-border px-4 py-3">
+            <dt class="text-xs text-muted-foreground">每日现磨</dt>
+            <dd class="font-display text-xl text-foreground">4 款豆</dd>
+          </div>
+          <div class="rounded-2xl bg-card/85 border border-border px-4 py-3">
+            <dt class="text-xs text-muted-foreground">海景座位</dt>
+            <dd class="font-display text-xl text-foreground">32 座</dd>
+          </div>
+          <div class="rounded-2xl bg-card/85 border border-border px-4 py-3">
+            <dt class="text-xs text-muted-foreground">营业到</dt>
+            <dd class="font-display text-xl text-foreground">22:00</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value prop strip -->
+  <section class="bg-primary text-on-primary">
+    <div class="max-w-content mx-auto px-5 sm:px-8 py-8 sm:py-10 grid gap-6 sm:grid-cols-3 text-center sm:text-left">
+      <div class="reveal">
+        <p class="font-display text-lg">面朝大海</p>
+        <p class="text-sm text-on-primary/80 mt-1">一整面落地窗，日落时分最美。</p>
+      </div>
+      <div class="reveal" style="transition-delay:80ms">
+        <p class="font-display text-lg">当日现磨</p>
+        <p class="text-sm text-on-primary/80 mt-1">小批量研磨，风味留在杯里。</p>
+      </div>
+      <div class="reveal" style="transition-delay:160ms">
+        <p class="font-display text-lg">自家烘焙</p>
+        <p class="text-sm text-on-primary/80 mt-1">每周两次出炉，香气不断档。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="bg-background">
+    <div class="max-w-content mx-auto px-5 sm:px-8 py-20 sm:py-24">
+      <div class="max-w-2xl mb-14 reveal">
+        <p class="font-display text-sm tracking-[0.2em] text-primary mb-3">SERVICES</p>
+        <h2 class="font-display text-3xl sm:text-4xl text-foreground">三件事，我们做到恰好</h2>
+        <p class="mt-4 text-foreground/80 leading-relaxed">不堆菜单，只把拿铁、手冲与烘焙打磨到每天都想再来一杯的程度。</p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Latte -->
+        <article class="rounded-3xl bg-card border border-border overflow-hidden reveal">
+          <div class="h-40 dot-grid" style="background-color:#FEF3C7;">
+            <div class="w-full h-full grid place-items-center">
+              <svg viewBox="0 0 120 120" class="w-28 h-28" fill="none" aria-hidden="true">
+                <path d="M22 40h60v22a30 30 0 0 1-30 30H52a30 30 0 0 1-30-30V40Z" fill="#92400E"/>
+                <path d="M82 44h12a14 14 0 0 1 0 28H82" stroke="#B45309" stroke-width="6" stroke-linecap="round"/>
+                <path d="M36 24c0 6 6 8 6 14M54 20c0 6 6 8 6 14M72 24c0 6 6 8 6 14" stroke="#B45309" stroke-width="4" stroke-linecap="round"/>
+                <ellipse cx="52" cy="48" rx="24" ry="7" fill="#FDE68A"/>
+              </svg>
+            </div>
+          </div>
+          <div class="p-7">
+            <h3 class="font-display text-xl text-card-foreground">拿铁 Latte</h3>
+            <p class="mt-3 text-sm text-card-foreground/80 leading-relaxed">双份现磨浓缩配微甜奶泡，绵密顺口，海风大时来一杯正好。</p>
+            <p class="mt-5 font-display text-primary text-lg">¥ 28</p>
+          </div>
+        </article>
+
+        <!-- Pour over -->
+        <article class="rounded-3xl bg-card border border-border overflow-hidden reveal" style="transition-delay:100ms">
+          <div class="h-40 dot-grid" style="background-color:#FEF3C7;">
+            <div class="w-full h-full grid place-items-center">
+              <svg viewBox="0 0 120 120" class="w-28 h-28" fill="none" aria-hidden="true">
+                <path d="M28 34h64l-14 26v24H42V60L28 34Z" fill="#92400E"/>
+                <path d="M42 84h36v8a6 6 0 0 1-6 6H48a6 6 0 0 1-6-6v-8Z" fill="#B45309"/>
+                <path d="M46 22c0 8-8 10-8 18M60 18c0 8-8 10-8 18" stroke="#B45309" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="p-7">
+            <h3 class="font-display text-xl text-card-foreground">手冲 Pour Over</h3>
+            <p class="mt-3 text-sm text-card-foreground/80 leading-relaxed">单产地豆，三段注水。清亮果酸与干净回甘，坐下来慢慢等三分钟。</p>
+            <p class="mt-5 font-display text-primary text-lg">¥ 38</p>
+          </div>
+        </article>
+
+        <!-- Baking -->
+        <article class="rounded-3xl bg-card border border-border overflow-hidden reveal" style="transition-delay:200ms">
+          <div class="h-40 dot-grid" style="background-color:#FEF3C7;">
+            <div class="w-full h-full grid place-items-center">
+              <svg viewBox="0 0 120 120" class="w-28 h-28" fill="none" aria-hidden="true">
+                <circle cx="60" cy="58" r="34" fill="#92400E"/>
+                <path d="M38 46c14 6 30 6 44 0M40 74h40" stroke="#FDE68A" stroke-width="4" stroke-linecap="round"/>
+                <path d="M46 26c4 6 12 6 16 0" stroke="#B45309" stroke-width="4" stroke-linecap="round"/>
+                <path d="M30 96h60" stroke="#B45309" stroke-width="6" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="p-7">
+            <h3 class="font-display text-xl text-card-foreground">新鲜烘焙</h3>
+            <p class="mt-3 text-sm text-card-foreground/80 leading-relaxed">可颂、司康与每日小蛋糕。出炉时间写在黑板，香气会自己找到你。</p>
+            <p class="mt-5 font-display text-primary text-lg">¥ 22 起</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ocean view -->
+  <section id="view" class="bg-primary text-on-primary overflow-hidden">
+    <div class="max-w-content mx-auto px-5 sm:px-8 py-20 sm:py-24 grid gap-12 lg:grid-cols-2 lg:items-center">
+      <div class="reveal">
+        <p class="font-display text-sm tracking-[0.2em] text-on-primary/80 mb-3">OCEAN VIEW</p>
+        <h2 class="font-display text-3xl sm:text-4xl leading-snug">把最好的位置，留给海</h2>
+        <p class="mt-5 text-on-primary/85 leading-relaxed">
+          我们不靠墙摆桌椅。整面落地窗、木质长吧台、靠窗的软座——阳光和海浪走进来，杯子里的咖啡才有完整的味道。
+        </p>
+        <ul class="mt-8 space-y-4 text-sm">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-5 h-5 rounded-md bg-on-primary/20 grid place-items-center shrink-0" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+            </span>
+            <span>32 个座位，超过一半正对海面</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-5 h-5 rounded-md bg-on-primary/20 grid place-items-center shrink-0" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+            </span>
+            <span>日落时段（17:30–19:00）光线最佳</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-5 h-5 rounded-md bg-on-primary/20 grid place-items-center shrink-0" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+            </span>
+            <span>靠窗位可预约，适合安静办公与约会</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="reveal" style="transition-delay:120ms">
+        <div class="rounded-3xl overflow-hidden border border-on-primary/20">
+          <svg viewBox="0 0 480 360" class="w-full h-auto block" role="img" aria-label="蓝湾咖啡海景空间插画">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#FEF3C7"/>
+                <stop offset="55%" stop-color="#FDE68A"/>
+                <stop offset="56%" stop-color="#B45309"/>
+                <stop offset="100%" stop-color="#92400E"/>
+              </linearGradient>
+            </defs>
+            <rect width="480" height="360" fill="url(#sky)"/>
+            <circle cx="360" cy="80" r="40" fill="#FEF3C7" opacity="0.9"/>
+            <path d="M0 210 C80 180 160 240 240 210 C320 180 400 240 480 210 L480 260 L0 260 Z" fill="#78350F" opacity="0.4"/>
+            <path d="M0 250 C80 220 160 280 240 250 C320 220 400 280 480 250 L480 320 L0 320 Z" fill="#78350F" opacity="0.6"/>
+            <rect x="40" y="250" width="400" height="70" rx="16" fill="#FEF3C7" opacity="0.12"/>
+            <rect x="72" y="276" width="96" height="20" rx="10" fill="#FDE68A" opacity="0.9"/>
+            <rect x="192" y="276" width="96" height="20" rx="10" fill="#FDE68A" opacity="0.7"/>
+            <rect x="312" y="276" width="96" height="20" rx="10" fill="#FDE68A" opacity="0.5"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Craft / proof -->
+  <section id="craft" class="bg-background">
+    <div class="max-w-content mx-auto px-5 sm:px-8 py-20 sm:py-24">
+      <div class="max-w-2xl mb-14 reveal">
+        <p class="font-display text-sm tracking-[0.2em] text-primary mb-3">CRAFT</p>
+        <h2 class="font-display text-3xl sm:text-4xl text-foreground">现磨，是一天的起点</h2>
+        <p class="mt-4 text-foreground/80 leading-relaxed">从生豆到杯子，四道工序，每一道都在你闻得到的地方发生。</p>
+      </div>
+
+      <ol class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <li class="rounded-3xl bg-card border border-border p-7 reveal">
+          <span class="font-display text-3xl text-border">01</span>
+          <h3 class="mt-4 font-display text-lg text-card-foreground">选豆</h3>
+          <p class="mt-2 text-sm text-card-foreground/80 leading-relaxed">四款常备豆，覆盖坚果、可可与明亮果酸。</p>
+        </li>
+        <li class="rounded-3xl bg-card border border-border p-7 reveal" style="transition-delay:80ms">
+          <span class="font-display text-3xl text-border">02</span>
+          <h3 class="mt-4 font-display text-lg text-card-foreground">烘焙</h3>
+          <p class="mt-2 text-sm text-card-foreground/80 leading-relaxed">每周两次小批量出炉，养豆三天后上架。</p>
+        </li>
+        <li class="rounded-3xl bg-card border border-border p-7 reveal" style="transition-delay:160ms">
+          <span class="font-display text-3xl text-border">03</span>
+          <h3 class="mt-4 font-display text-lg text-card-foreground">现磨</h3>
+          <p class="mt-2 text-sm text-card-foreground/80 leading-relaxed">每单现磨，按冲煮方式调整刻度。</p>
+        </li>
+        <li class="rounded-3xl bg-card border border-border p-7 reveal" style="transition-delay:240ms">
+          <span class="font-display text-3xl text-border">04</span>
+          <h3 class="mt-4 font-display text-lg text-card-foreground">出杯</h3>
+          <p class="mt-2 text-sm text-card-foreground/80 leading-relaxed">带温度计校准，热水一到就上桌。</p>
+        </li>
+      </ol>
+
+      <!-- Proof quote -->
+      <div class="mt-14 rounded-3xl bg-card border border-border p-8 sm:p-10 reveal">
+        <div class="grid gap-8 sm:grid-cols-3 text-center">
+          <div>
+            <p class="font-display text-3xl text-primary">6 年</p>
+            <p class="mt-2 text-sm text-muted-foreground">在同一片海边出杯</p>
+          </div>
+          <div>
+            <p class="font-display text-3xl text-primary">120+</p>
+            <p class="mt-2 text-sm text-muted-foreground">住附近的常客</p>
+          </div>
+          <div>
+            <p class="font-display text-3xl text-primary">4.8</p>
+            <p class="mt-2 text-sm text-muted-foreground">咖啡爱好者打分</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Visit -->
+  <section id="visit" class="bg-primary text-on-primary">
+    <div class="max-w-content mx-auto px-5 sm:px-8 py-20 sm:py-24">
+      <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+        <div class="reveal">
+          <p class="font-display text-sm tracking-[0.2em] text-on-primary/80 mb-3">RESERVE</p>
+          <h2 class="font-display text-3xl sm:text-4xl leading-snug">留个靠窗的位置给你</h2>
+          <p class="mt-5 text-on-primary/85 leading-relaxed">
+            通过下方表单预约，我们会在 30 分钟内确认。靠窗位有限，建议提前一天。
+          </p>
+          <div class="mt-8 space-y-3 text-sm">
+            <p class="flex items-center gap-3">
+              <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              蓝湾滨海路 88 号 · 一层临海
+            </p>
+            <p class="flex items-center gap-3">
+              <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+              每日 08:00 – 22:00
+            </p>
+            <p class="flex items-center gap-3">
+              <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+              hello@lanwan.cafe
+            </p>
+          </div>
+        </div>
+
+        <form class="rounded-3xl bg-background text-foreground p-7 sm:p-9 shadow-sm reveal" style="transition-delay:120ms" onsubmit="return false;">
+          <h3 class="font-display text-xl">预约到店</h3>
+          <p class="mt-2 text-sm text-muted-foreground">填写信息，我们电话与你确认座位。</p>
+
+          <div class="mt-6 space-y-4">
+            <div>
+              <label for="name" class="block text-sm font-semibold mb-1.5">称呼</label>
+              <input id="name" name="name" type="text" required placeholder="怎么称呼你"
+                class="w-full rounded-xl border border-border bg-card px-4 py-3 text-sm placeholder:text-muted-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-semibold mb-1.5">手机号</label>
+              <input id="phone" name="phone" type="tel" required placeholder="用于确认预约"
+                class="w-full rounded-xl border border-border bg-card px-4 py-3 text-sm placeholder:text-muted-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label for="date" class="block text-sm font-semibold mb-1.5">日期</label>
+                <input id="date" name="date" type="date"
+                  class="w-full rounded-xl border border-border bg-card px-4 py-3 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+              </div>
+              <div>
+                <label for="people" class="block text-sm font-semibold mb-1.5">人数</label>
+                <select id="people" name="people"
+                  class="w-full rounded-xl border border-border bg-card px-4 py-3 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+                  <option>1 人</option>
+                  <option selected>2 人</option>
+                  <option>3–4 人</option>
+                  <option>5 人以上</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="note" class="block text-sm font-semibold mb-1.5">备注（可选）</label>
+              <textarea id="note" name="note" rows="3" placeholder="靠窗位、安静角落、需要插座…"
+                class="w-full rounded-xl border border-border bg-card px-4 py-3 text-sm placeholder:text-muted-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"></textarea>
+            </div>
+          </div>
+
+          <button type="submit"
+            class="mt-6 w-full rounded-xl bg-primary text-on-primary px-6 py-3.5 font-semibold hover:bg-secondary hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
+            提交预约
+          </button>
+          <p class="mt-3 text-xs text-muted-foreground text-center">提交即表示同意我们仅将信息用于本次预约确认。</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-foreground text-background">
+  <div class="max-w-content mx-auto px-5 sm:px-8 py-14">
+    <div class="grid gap-10 sm:grid-cols-3">
+      <div>
+        <div class="flex items-center gap-2.5">
+          <span class="w-9 h-9 rounded-xl bg-background grid place-items-center text-foreground" aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 8h11v5a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8Z"/>
+              <path d="M15 9h2.5a2.5 2.5 0 0 1 0 5H15"/>
+              <path d="M6 3.5c0 1 .8 1.5.8 2.5"/>
+            </svg>
+          </span>
+          <span class="font-display text-lg">蓝湾咖啡</span>
+        </div>
+        <p class="mt-4 text-sm text-background/70 leading-relaxed max-w-xs">
+          海景、现磨、烘焙。为咖啡爱好者留一盏靠窗的灯。
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-display text-sm tracking-[0.15em] text-background/90">导航</h3>
+        <ul class="mt-4 space-y-2.5 text-sm text-background/70">
+          <li><a href="#menu" class="hover:text-background transition-colors duration-200">菜单</a></li>
+          <li><a href="#view" class="hover:text-background transition-colors duration-200">海景空间</a></li>
+          <li><a href="#craft" class="hover:text-background transition-colors duration-200">现磨烘焙</a></li>
+          <li><a href="#visit" class="hover:text-background transition-colors duration-200">预约到店</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display text-sm tracking-[0.15em] text-background/90">到店</h3>
+        <ul class="mt-4 space-y-2.5 text-sm text-background/70">
+          <li>蓝湾滨海路 88 号 · 一层临海</li>
+          <li>每日 08:00 – 22:00</li>
+          <li>hello@lanwan.cafe</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-6 border-t border-background/15 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-background/60">
+      <p>© 2025 蓝湾咖啡 版权所有</p>
+      <p>coffee · ocean · cozy</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var revealEls = document.querySelectorAll('.reveal');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (reduce || !('IntersectionObserver' in window)) {
+    revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+    return;
+  }
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+  revealEls.forEach(function (el) { io.observe(el); });
+})();
+</script>
+</body>
+</html>
